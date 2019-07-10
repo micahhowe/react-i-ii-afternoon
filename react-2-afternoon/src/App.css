@@ -1,7 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   background:rgb(28, 28, 28);
-  height:90vh;
+  height:100vh;
 }
 
 .App-logo {
@@ -37,23 +37,30 @@
 header{
   height:10vh;
   background:#34A5DA;
+  display: flex;
+  align-items: column;
+}
+#header-text{
+  margin: 4% 0 0 5%;
 }
 
 #card{
   display:flex;
   margin: 15% 0 0 15%;
-  height:400px;
-  width:600px;
+  height:50%;
+  width: 70%;
   background:rgb(235, 235, 235);
-  margin-bottom:10px;
+  margin-bottom:15px;
 }
 
 #card-content{
-  padding: 0 0 0 10%;
+  padding: 0 24% 0 24%;
 }
 
 #white-text{
   color: white;
+  width:14%;
+  background-color: #282c34;
 }
 
 #nav{
@@ -65,12 +72,17 @@ button{
   font-size:20px;
   background:#34A5DA;
   border-radius:25px;
-  width:100px;
-  height:40px;
+  width: 13%;
+  height:30px;
   border: 0px;
   color:white;
+  margin-top:10px;
 }
 h2{
-  display:flex;
-  justify-content: flex-end
+  display: inline;
+  float:right;
+  padding-left:20px;
+}
+h1{
+  text-decoration: underline;
 }

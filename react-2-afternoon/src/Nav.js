@@ -8,12 +8,12 @@ export default class Card extends Component {
     render(){
         return(
             <div id={'nav'}>
-                <p id={'white-text'} onClick={() => this.props.moveUpData()}>{'< Previous'}</p>
+                <button id={'white-text'} onClick={() => this.props.moveDownData()}>{'< Previous'}</button>
 
                 <button>Edit</button>
                 <button>Delete</button>
                 <button>New</button>
-                <p id={'white-text'} onClick={() => this.props.moveDownData()}>{'Next >'}</p>
+                <button id={'white-text'} onClick={() => this.props.moveUpData()}>{'Next >'}</button>
             </div>
         )
     }

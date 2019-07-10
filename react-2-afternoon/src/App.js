@@ -18,27 +18,28 @@ class App extends Component {
   }
 moveUpData(){
   let newIndex = 0
-  if(this.state.index == 25){
+  if(this.state.index == 24){
     newIndex = 0
   }else{
-    newIndex = this.state.index++
+    newIndex = this.state.index + 1
   }
   this.setState({index: newIndex})
 }
 moveDownData(){
-  let newerIndex = 25
-  if(this.state.index == 0){
-    newerIndex = 25
+  let newerIndex = this.state.index
+  if(newerIndex === 0){
+    newerIndex = 24
   }else{
-    newerIndex = this.state.index--
+    newerIndex--
   }
   this.setState({index: newerIndex})
 }
 
   render(){
+    //console.log(this.state)
     return (
       <div className="App">
-        <header>Home</header>
+        <header><h3 id={'header-text'}>Home</h3></header>
         <Card data={this.state.data} index={this.state.index} />
         <Nav moveUpData={this.moveUpData} moveDownData={this.moveDownData}/>
       </div>
